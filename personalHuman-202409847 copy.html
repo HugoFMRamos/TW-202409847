@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Human/personalHuman-202409847.css">
+    <script src="Human/main.js" defer></script>
+    <script src="Human/audioRecorder.js" defer></script>
+    <script src="Human/oscillator.js" defer></script>
+    <script src="Human/videoFilters.js" defer></script>
+    <script src="Human/videochat.js" defer></script>
+    <title>Personal Website</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="text" class="header"><h1>Personal Website</h1></div>
+
+        <div id="slideshow-container" class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/202409847.jpg" width="500" height="500">
+                <div class="text">It's me!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/image1.jpg" width="500" height="500">
+                <div class="text">Rawr!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/image2.jpg" width="500" height="500">
+                <div class="text">Gaming!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/image3.jpg" width="500" height="500">
+                <div class="text">Nice shoes!</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="addresses">
+            <p id="text2">
+                I'm Hugo Ramos. I'm 21 and live in Fânzeres. I like gaming, game development and collecting action figures. 
+                I have a bachelor's in Computer Engineering from Universidade Portucalense and now I'm in my second year
+                of a Multimedia Masters at FEUP. Please, pay me no mind.
+            </p>
+            <ul id="list">
+                <li><a href="https://aaaa-2003.itch.io/" onmouseover="showText()" onmouseleave="hideText()">Itch.io</a></li>
+                <li><a href="https://github.com/HugoFMRamos">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/hugo-ramos-8092122b2/">Linkedin</a></li>
+                <li><a href="https://hugofmramos.github.io/TW-Class7-Game/">Game (MOBILE ONLY)</a></li>
+                <li><button onclick="changeTheme()">Change Theme</button></li>
+                <li><button id="countingBtn" onclick="count()">0</button></li>
+            </ul>
+            <p id="text3"></p>
+        </div>
+
+        <div>
+            <button id="btnStart">Start Recording</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btnStop">Stop Recording</button>
+        </div>
+
+        <audio id="audioPlay" controls></audio> 
+
+        <div id="controls" class="visualizer">
+            <button id="powerBtn">Turn On</button>
+            <div id="led"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="embedVideo" class="embedVideo">
+            <iframe id="iframe" width=1021 height=574 src="https://www.youtube.com/embed/iJooeBRsQkA?si=NvXw6FwBvA_fPSsB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="filters">
+            <button id="btnBW">Black and White</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btnInvert">Negative</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btnClear">Clear Filter</button>
+        </div>
+
+        <div>
+            <strong>User ID:</strong> <span id="my-id">Connecting...</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="id-friend" placeholder="Friend's ID">
+        </div>
+
+        <div>
+            <button id="btn-call">Call</button>
+        </div>
+
+        <div id="videos">
+            <video id="local-video" autoplay muted playsinline></video>
+            <video id="remote-video" autoplay playsinline></video>
+        </div>
+    </div>
+</body>
+</html>
