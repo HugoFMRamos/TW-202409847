@@ -1,2 +1,0 @@
-Mobile Game (Human): https://github.com/HugoFMRamos/TW-Class7-Game
-Mobile Game (AI): https://github.com/HugoFMRamos/TW-Class7-GameAI/tree/main

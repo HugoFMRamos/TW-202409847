@@ -1,2 +1,0 @@
-The AI created a simple game. It works on Android and IOs but the game itself isn't very good, as it becomes impossible to play very quickly.
-In terms of code however it used current API's and works on phone.
