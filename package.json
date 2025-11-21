@@ -8,8 +8,7 @@
     "vite": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node server.js",
-    "predeploy": "npm run dev"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
