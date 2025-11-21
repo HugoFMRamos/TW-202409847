@@ -4,7 +4,10 @@
   "description": "TERMINAL cd [project’s folder] -- command navigates your terminal's focus into your project folder. You must be \"inside\" the folder to run the next commands",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run start\" \"npm run vite\"",
+    "vite": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "start": "node server.js"
   },
   "keywords": [],
@@ -12,6 +15,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@babylonjs/core": "^8.38.0",
+    "@babylonjs/gui": "^8.38.0",
+    "@babylonjs/inspector": "^8.38.0",
+    "@babylonjs/loaders": "^8.38.0",
+    "@babylonjs/materials": "^8.38.0",
+    "babylonjs": "^8.38.0",
     "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^7.2.4"
   }
 }
